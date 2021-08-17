@@ -11,48 +11,66 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <script type="text/javascript" src="./main.js"></script>
-
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       onsubmit="onSubmit()"
-      autocomplete="off">
+      method="POST">
       <fieldset class="form__fieldset">
         <legend>Personal information</legend>
         <div class="field">
           <label for="surId">
             Surname:
-            <input type="text" name="surname"
-            id="surId">
+            <input
+            type="text"
+            name="surname"
+            id="surId"
+            autocomplete="off"
+            >
           </label>
         </div>
         <div class="field">
           <label for="nameId">
             Name:
-            <input type="text" name="name"
-            id="nameId">
+            <input
+            type="text"
+            name="name"
+            id="nameId"
+            autocomplete="off"
+            >
           </label>
         </div>
         <div class="field">
           <label for="ageId">
             How old are You?
-            <input type="number" name="age"
-            min="12" max="100"
-            id="ageId" value="12">
+            <input
+            type="number"
+            name="age"
+            min="12"
+            max="100"
+            id="ageId"
+            value="12"
+            >
           </label>
         </div>
         <div class="field">
           <label for="birthId">
             Full date of birth:
-            <input type="date" name="birth"
-            id="birthId">
+            <input
+            type="date"
+            name="birth"
+            id="birthId"
+            >
           </label>
         </div>
         <div class="field">
           <label for="termsId">
             I accept the term of the agreement
-            <input type="checkbox" name="terms"
-            id="termsId" required>
+            <input
+            type="checkbox"
+            name="terms"
+            id="termsId"
+            required
+            >
           </label>
         </div>
       </fieldset>
@@ -62,16 +80,24 @@
         <div class="field">
           <label for="emailId">
             E-mail:
-            <input type="email" name="email"
-            id="emailId" minlength="5"
-            maxlength="32" placeholder="email@example.com">
+            <input
+            type="email"
+            name="email"
+            id="emailId"
+            minlength="5"
+            maxlength="32"
+            placeholder="email@example.com"
+            >
           </label>
         </div>
         <div class="field">
           <label for="passId">
             Password:
-            <input type="password" name="password"
-            id="passId">
+            <input
+            type="password"
+            name="password"
+            id="passId"
+            >
           </label>
         </div>
       </fieldset>
@@ -82,13 +108,19 @@
           <label for="yesId">
             Do you love cats?
             <label for="yesId">
-              <input type="radio" name="yes"
-              id="yesId">
+              <input
+              type="radio"
+              name="yes"
+              id="yesId"
+              >
               Yes
             </label>
             <label for="noId">
-              <input type="radio" name="no"
-              id="noId">
+              <input
+              type="radio"
+              name="no"
+              id="noId"
+              >
               No
             </label>
           </label>
@@ -96,22 +128,31 @@
         <div class="field">
           <label for="colorId">
             What is your favorite color?
-            <input type="color" name="color"
-            id="colorId">
+            <input
+            type="color"
+            name="color"
+            id="colorId"
+            >
           </label>
         </div>
         <div class="field">
           <label for="timeId">
             What time do you go to bed?
-            <input type="time" name="time"
-            id="timeId">
+            <input
+            type="time"
+            name="time"
+            id="timeId"
+            >
           </label>
         </div>
         <div class="field">
           <label for="carId">
             What are your favorite brand of cars?
-            <select name="car" id="carId"
-            multiple>
+            <select
+            name="car"
+            id="carId"
+            multiple
+            >
               <option value="bmw">BMW</option>
               <option value="audi">Audi</option>
               <option value="lada">Lada</option>
@@ -121,9 +162,13 @@
         <div class="field">
           <label for="rateId">
             How do you rate our work?
-            <input type="range" min="0"
-            max="10" name="rate"
-            id="rateId" value="0">
+            <input
+            type="range"
+            min="0"
+            max="10"
+            name="rate"
+            id="rateId"
+            value="0">
           </label>
         </div>
       </fieldset>
@@ -133,8 +178,12 @@
         <div class="field">
           <label for="commId">
             Comments:
-            <textarea name="comment" cols="20"
-            rows="2" id="commId">
+            <textarea
+            name="comment"
+            cols="20"
+            rows="2"
+            id="commId"
+            >
             </textarea>
           </label>
         </div>
@@ -150,5 +199,6 @@
       </fieldset>
       <button type="submit">Submit</button>
     </form>
+    <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
